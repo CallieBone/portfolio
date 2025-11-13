@@ -1,22 +1,74 @@
-body {margin:0;font-family:Arial}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+/* 🌷 Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  color: #6a1b9a;
 }
 
-.topnav a {
+/* 🌸 Container */
+#container {
+  margin: 50px;
+  background-color: #fffafc;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+  padding: 20px;
+}
+
+/* ✨ Typography */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d63384;
+  animation: shimmer 2s infinite alternate;
+}
+
+h2 {
+  color: #c2185b;
+  border-bottom: 2px dashed #f8bbd0;
+  padding-bottom: 5px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+p.shift {
+  margin-left: 30px;
+}
+
+.listmargin {
+  margin-bottom: 20px;
+}
+
+/* 💖 Navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #f8bbd0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.topnav a,
+.dropdown .dropbtn {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #f48fb1;
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #ec407a;
   color: white;
 }
 
@@ -24,56 +76,43 @@ body {margin:0;font-family:Arial}
   display: none;
 }
 
+/* 🌼 Dropdown */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffe4e1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 8px;
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #6a1b9a;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #fce4ec;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* 📱 Responsive Nav */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -83,7 +122,10 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -94,8 +136,13 @@ body {margin:0;font-family:Arial}
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -103,38 +150,300 @@ body {margin:0;font-family:Arial}
   }
 }
 
-
-
-body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	/*background-color: #666;*/
-	}
-
+/* 🌟 Profile Image */
 #container {
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+  margin: 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+  padding: 20px;
 }
-
-p {
-	margin-bottom: 20px;
-}
-
-p.shift {
-    margin-left: 30px;
-}
-
-.listmargin  {
-	margin-bottom: 20px;
-}	
 
 .img-style-1 {
-	float: left;
-	margin-right: 10px;
-    margin-bottom: 10px;
-	padding: 5px;
-	border: 1px solid #CCC;
-  height: 300px;
-  width: 250px;
-}	
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #f48fb1;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+}
+
+.img-style-1:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 0 25px #ffb6c1, 0 0 35px #f8bbd0;
+  z-index: 2;
+}
+
+.img-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff0084;
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.s ease;
+  pointer-events:all;
+  white-space: nowrap;
+  max-width: 90%;
+}
+
+.img-hover-container:hover .hover-text {
+  opacity: 1;
+}
+
+.profile-image-container:hover .hover-text {
+  display: block; /* Show on hover */
+}
+
+
+/* ✨ Fade-in Animation */
+.tabcontent {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.tabcontent.active-tab {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🌈 Sparkle Title Animation */
+@keyframes shimmer {
+  from {
+    text-shadow: 0 0 5px #ffb6c1;
+  }
+  to {
+    text-shadow: 0 0 15px #ff69b4;
+  }
+}
+
+.contact-card {
+  background: #fff0f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ff69b4;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.contact-item .icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+  color: #ff69b4;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+.contact-item.location {
+  position: relative;
+  display: inline-block;
+}
+
+.location-text {
+  margin-left: 5px;
+}
+
+.hover-note {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffe4e1;
+  color: #333;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #ff69b4;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.contact-item.location:hover .hover-note {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* 🌟 Button Styles */
+button {
+  background-color: #f48fb1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a:focus, button:focus {
+  outline: 2px dashed #d63384;
+  outline-offset: 4px;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: #d63384;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #ad1457;
+}
+a:active {
+  color: #880e4f;
+}
+a:hover, a:focus {
+  color: #e91e63;
+}
+a:focus {
+  outline: 2px dashed #d63384;
+  outline-offset: 4px;
+}
+a.button-link {
+  background-color: #f48fb1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+a.button-link:hover {
+  background-color: #ec407a;
+}
+
+.topnav.responsive .dropdown .dropbtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Typewriter effect*/
+.typewriter {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid pink;
+  animation: blink-caret 0.75s step-end infinite;
+    text-decoration: dotted underline;
+  color: #ff0080;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: pink; }
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.accomplishment-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+.accomplishment-list li strong {
+  color: #ff69b4;
+}
+
+
+/* Skill Card Styles */
+.skill-card {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff69b4;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card .desc {
+  display: block;
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.skill-card .example-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.skill-card:hover .example-img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.skill-card .label,
+.skill-card .desc {
+  position: relative;
+  z-index: 2;
+}
+/* Responsive Skill Cards */
+@media screen and (max-width: 600px) {
+  .skill-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

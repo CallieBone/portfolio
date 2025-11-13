@@ -1,331 +1,420 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Bruce Bauer - E-Commerce Lectures and Resources</title>
-    <meta name="description" content="E-Commerce and Information Technology Lectures">
-    <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
-    <meta name="author" content="Bruce Bauer">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- See https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
-<style>
-body {margin:0;font-family:Arial}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-
-
-body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	/*background-color: #666;*/
-	}
-
-#container {
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-p {
-	margin-bottom: 20px;
-}
-
-p.shift {
-    margin-left: 30px;
-}
-
-.listmargin  {
-	margin-bottom: 20px;
-}	
-
-.img-style-1 {
-	float: left;
-	margin-right: 10px;
-    margin-bottom: 10px;
-	padding: 5px;
-	border: 1px solid #CCC;
-}	
-
-
-
-</style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Callie Bone ✨ Web Portfolio</title>
+  <meta name="description" content="Creative Web Development Portfolio" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Twine, UI/UX" />
+  <meta name="author" content="Callie Bone" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-<div id="container">
-    <h1>Portfolio of Callie Bone</h1>
-    <div class="topnav" id="myTopnav">
-        <a class="tablinks" onclick="openTab(event, 'Home')" class="active" id="defaultOpen">Profile</a>
-        <a class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
-        <a class="tablinks" onclick="openTab(event, 'Skills')">Skills</a>
-        <a class="tablinks" onclick="openTab(event, 'Education')">Education</a>
-        <a class="tablinks" onclick="openTab(event, 'Accomplishments')">Accomplishments</a>
-        <a class="tablinks" onclick="openTab(event, 'CoverLetter')">Cover Letter</a>
-        <a class="tablinks" onclick="openTab(event, 'Contact')">Contact</a>
-        <div class="dropdown">
-            <button class="dropbtn">Work Examples 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a class="tablinks" onclick="openTab(event, 'Writing')">Writing Examples</a>
-                <a class="tablinks" onclick="openTab(event, 'WebProject')">Web Project</a>
-                <a class="tablinks" onclick="openTab(event, 'Database')">Database</a>
-                <a class="tablinks" onclick="openTab(event, 'Programming')">Programming</a>
-                <a class="tablinks" onclick="openTab(event, 'SoftSkills')">Soft Skills</a>
-                <a class="tablinks" onclick="openTab(event, 'Capstone')">Capstone</a>
-            </div>
-        </div> 
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+  <div id="container">
+    <header class="header-glow">
+      <h1>🌷 Portfolio of Callie Bone 🌷</h1>
+      <div class="typewriter">
+  <span>I am a <span id="dynamic-text"></span></span>
+</div>
+    </header>
 
+    <nav class="topnav" id="myTopnav">
+      <a class="tablinks active" onclick="openTab(event, 'Home')" id="defaultOpen">Profile</a>
+      <a class="tablinks" onclick="openTab(event, 'Resume')">Resume</a>
+      <a class="tablinks" onclick="openTab(event, 'Skills')">Skills</a>
+      <a class="tablinks" onclick="openTab(event, 'Education')">Education</a>
+      <a class="tablinks" onclick="openTab(event, 'Accomplishments')">Accomplishments</a>
+      <a class="tablinks" onclick="openTab(event, 'CoverLetter')">Cover Letter</a>
+      <a class="tablinks" onclick="openTab(event, 'Contact')">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Work Examples <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a class="tablinks" onclick="openTab(event, 'Writing')">Writing</a>
+          <a class="tablinks" onclick="openTab(event, 'WebProject')">Web Project</a>
+          <a class="tablinks" onclick="openTab(event, 'Database')">Database</a>
+          <a class="tablinks" onclick="openTab(event, 'Programming')">Programming</a>
+          <a class="tablinks" onclick="openTab(event, 'SoftSkills')">Soft Skills</a>
+          <a class="tablinks" onclick="openTab(event, 'Capstone')">Capstone</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
 
-    <!-- Begin Home Section -->
-    <div id="Home" class="tabcontent">
+    <main>
+      <section id="Home" class="tabcontent fade-in">
         <h2>Profile</h2>
-        <img src="img/calliebone.JPG" alt="Profile Picture" class="img-style-1">
-               Web development professional with proven history of building and optimizing web applications to meet client specifications. Adept at collaborating within teams to deliver high-quality projects that drive business results. Known for technical acumen in various programming languages and adaptability to evolving project requirements.
+        <div class="img-hover-container">
+        <img src="img/calliebone.JPG" alt="Callie Bone" class="img-style-1" />
+          <div class="hover-text">I'm eager to join your team!</div>
+        <p>
+          Web development professional with a passion for building joyful, user-centered digital experiences. Adept at collaborating within teams to deliver high-quality projects that drive results.
+        </p>
+        <p>
+          Web development professional with proven history of building and optimizing web applications to meet client specifications. Adept at collaborating within teams to deliver high-quality projects that drive business results. Known for technical acumen in various programming languages and adaptability to evolving project requirements. Experienced with front-end and back-end development, creating responsive and efficient web applications. Utilizes variety of coding languages and frameworks to build user-centric solutions that meet business objectives. Strong understanding of collaborative workflows and version control systems to ensure seamless project completion. <br> <br> Currently pursuing a Bachelor of Science in Information Technology with a concentration in Web Development from University of Arkansas at Little Rock, expected graduation in 2027. Eager to apply academic knowledge and hands-on experience to contribute effectively in a dynamic web development role.<p>
+      </section>
 
-               Experienced with front-end and back-end development, creating responsive and efficient web applications. Utilizes variety of coding languages and frameworks to build user-centric solutions that meet business objectives. Strong understanding of collaborative workflows and version control systems to ensure seamless project completion.
-               <br>
-               <br>
-               Currently pursuing a Bachelor of Science in Information Technology with a concentration in Web Development from University of Arkansas at Little Rock, expected graduation in 2027. Eager to apply academic knowledge and hands-on experience to contribute effectively in a dynamic web development role.
-        
-    </div>
-
-    <!-- Begin Skills Section -->
-    <div id="Skills" class="tabcontent">
+      <section id="Skills" class="tabcontent fade-in">
         <h2>Skills</h2>
-    </div>
-
-    <!-- Begin Education Section -->
-    <div id="Education" class="tabcontent">
-        <h2>Education</h2>
-    </div>
-
-    <!-- Begin Accomplishments Section -->
-    <div id="Accomplishments" class="tabcontent">
-        <h2>Accomplishments</h2>
-    </div>        
-  
-    <!-- Begin Skills Section -->
-    <div id="Resume" class="tabcontent">
-        <h2>Resume</h2>
-    </div>
-    <!-- Begin Coverletter-->
-    <div id="CoverLetter" class="tabcontent">
-        <h2>Letter of Introduction</h2>
-        RE: Web Security Developer
-        <br>
-        <br>
-Dear Hiring Manager,
-<br>
-<br>
-I am writing to express my interest in the Web Security Developer position at Any. With five years of
-experience as an Assistant and a strong foundation in collaboration, critical thinking, and communication, I am
-excited about the opportunity to contribute to your innovative approach to cybersecurity.
-At my previous role, I developed an organized and systematic working style that allowed me to effectively
-collaborate with cross-functional teams and ensure seamless communication on complex projects. I
-understand the importance of integrating security best practices throughout the software development lifecycle
-and am committed to fostering a culture of security within the teams I work with.
-I have a keen interest in web security, particularly in designing and implementing robust security measures
-that protect against threats such as data breaches and injections. My proactive approach to identifying
-vulnerabilities, along with my ability to adapt to the ever-evolving landscape of cybersecurity, aligns with Any's
-mission to continuously improve and provide innovative solutions.
-I am willing to relocate for the right job, but due to the distance, I would appreciate the opportunity to discuss
-my qualifications for this position over the phone.
-At your convenience, be sure to get in touch with me at (501) 817-5349, or email me at
-bonecallie616@gmail.com. It would be an incredible opportunity for me to be considered for this role.
-I am enthusiastic about the opportunity to help safeguard digital environments and support your commitment to excellence and customer satisfaction.
-Thank you for considering my application. I look forward to the
-possibility of discussing how my skills could contribute to the success of Any.
-
-<br>
-<br>
-Sincerely,
-<br>
-<br>
-Callie Bone
-<br>
-11810 Pleasant Ridge Rd
-<br>
-Little Rock, Arkansas 72223
-<br>
-(501) 817-5349
-<br>
-bonecallie616@gmail.com
+<div class="skill-card">
+  <span class="label">Microsoft Excel</span>
+  <span class="desc">Data analysis & formulas</span>
 </div>
 
-    <!--Begin Contact-->
-    <div id="Contact" class="tabcontent">
-      <h2>Contact Me</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">HTML</span>
+  <span class="desc">Semantic structure & accessibility</span>
+</div>
 
-    <!-- Begin Writing Examples-->
-    <div id="Writing" class="tabcontent">
-        <h2>Writing Example 1</h2>
-        <h2>Writing Example 2</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">CSS</span>
+  <span class="desc">Styling, layout & animations</span>
+</div>
 
-    <!-- Begin Web Examples -->
-    <div id="WebProject" class="tabcontent">
-        <h2>Web Project 1</h2>
-        <h2>Web Project 2</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">JavaScript</span>
+  <span class="desc">Interactivity & logic</span>
+</div>
 
-    <!-- Begin Database Examples -->
-    <div id="Database" class="tabcontent">
-        <h2>Database Project 1</h2>
-        <h2>Database Project 2</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">GitHub</span>
+  <span class="desc">Version control & collaboration</span>
+</div>
 
-    <!-- Begin Programming Examples -->
-    <div id="Programming" class="tabcontent">
-        <h2>Programming Project 1</h2>
-        <h2>Programming Project 2</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">WordPress</span>
+  <span class="desc">Custom themes & content management</span>
+</div>
 
-    <!-- Begin Soft Skills -->
-    <div id="SoftSkills" class="tabcontent">
-        <h2>Soft Skills Project 1</h2>
-        <h2>Soft Skills Project 2</h2>
-    </div>
+<div class="skill-card">
+  <span class="label">Wix</span>
+  <span class="desc">Drag-and-drop site design</span>
+</div>
 
-    <!-- Begin Capstone Project -->
-    <div id="Capstone" class="tabcontent">
+<div class="skill-card">
+  <span class="label">Adobe Suite</span>
+  <span class="desc">Creative design & editing</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Google Workspace</span>
+  <span class="desc">Docs, Sheets, Slides & collaboration</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Zoom</span>
+  <span class="desc">Virtual meetings & screen sharing</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Google Meet</span>
+  <span class="desc">Video conferencing & integration</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Microsoft Word</span>
+  <span class="desc">Document formatting & templates</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">PowerPoint</span>
+  <span class="desc">Presentations & visual storytelling</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">CodePen</span>
+  <span class="desc">Live front-end prototyping</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Figma</span>
+  <span class="desc">UI/UX design & prototyping</span>
+</div>
+
+<div class="skill-card">
+  <span class="label">Twine</span>
+  <span class="desc">Interactive storytelling & logic</span>
+</div>
+
+      </section>
+
+  <section id="Education" class="tabcontent fade-in">
+  <h2>Education</h2>
+  <p><strong>University of Arkansas at Little Rock</strong> – B.S. in Information Technology (Web Development)</p>
+  <p>This degree blends technical expertise with creative design, preparing students for careers in front-end development, UX/UI design, and digital media production. Coursework includes programming, mobile development, IT project management, and visual storytelling.</p>
+
+  <h3>Highlighted Courses</h3>
+  <ul class="course-list">
+    <li><strong>FYE for Computing Majors</strong> – Orientation to computing disciplines and academic success strategies.</li>
+    <li><strong>Biological Anthropology (ANTH 1415)</strong> – Study of human evolution, genetics, and biological diversity.</li>
+    <li><strong>Guided Apps in IT (ITEC 3650)</strong> – Hands-on development of real-world IT applications and solutions.</li>
+    <li><strong>US History Since 1877 (HIST 2312)</strong> – Exploration of post-Reconstruction American history and cultural shifts.</li>
+    <li><strong>Web Technologies</strong> – Introduction to HTML, CSS, JavaScript, and web standards.</li>
+    <li><strong>Mythology</strong> – Comparative study of global myth systems and storytelling traditions.</li>
+    <li><strong>Mobile Web Development</strong> – Design and development of responsive mobile-first web apps.</li>
+    <li><strong>Intro to Web Principles/Design</strong> – Foundations of user-centered design, accessibility, and layout.</li>
+    <li><strong>Non-Linear Video Editing I</strong> – Editing techniques using digital software for storytelling and media production.</li>
+    <li><strong>Technical Writing</strong> – Clear, concise documentation for technical audiences and digital platforms.</li>
+    <li><strong>Speech Communication</strong> – Public speaking, interpersonal communication, and presentation skills.</li>
+    <li><strong>Intro to Criminal Justice</strong> – Overview of law enforcement, courts, and corrections systems.</li>
+    <li><strong>Composition I & II</strong> – Academic writing, research, and rhetorical strategies.</li>
+    <li><strong>Web Client Applications</strong> – Advanced JavaScript, APIs, and client-side frameworks.</li>
+    <li><strong>IT Project and Portfolio</strong> – Capstone course focused on project planning, execution, and showcasing work.</li>
+    <li><strong>Quantitative & Mathematical Reasoning</strong> – Logic, data interpretation, and problem-solving skills.</li>
+    <li><strong>Quantitative Reasoning Lab</strong> – Applied practice in mathematical reasoning and analysis.</li>
+    <li><strong>Writing on the Web</strong> – Crafting content for digital platforms with SEO and UX in mind.</li>
+    <li><strong>Basic Drawing</strong> – Visual composition, line work, and creative expression fundamentals.</li>
+    <li><strong>2-Dimensional Design</strong> – Principles of layout, balance, and visual hierarchy in design.</li>
+    <li><strong>Intro to Media Production</strong> – Audio, video, and multimedia production techniques.</li>
+  </ul>
+</section>
+
+
+   <section id="Accomplishments" class="tabcontent fade-in">
+  <h2>Accomplishments</h2>
+  <p>Here are some of the creative and technical milestones I've achieved through hands-on projects and coursework:</p>
+  <ul class="accomplishment-list">
+    <li><strong>Developed interactive budgeting game in Twine</strong> – Designed branching logic, progress tracking, and playful UI elements to teach financial literacy.</li>
+    <li><strong>Customized WordPress themes with advanced CSS</strong> – Implemented hover effects, responsive layouts, and sparkly design elements for a feminine, accessible interface.</li>
+    <li><strong>Built animated tab transitions</strong> – Enhanced user experience on my portfolio site with smooth, engaging navigation.</li>
+    <li><strong>Modularized reusable UI components</strong> – Created dropdowns, progress bars, and macros for scalable design in Twine and JavaScript.</li>
+    <li><strong>Styled interactive resume and cover letter sections</strong> – Used CSS animations and layout techniques to make professional content visually engaging.</li>
+    <li><strong>Debugged logic bugs across platforms</strong> – Diagnosed and resolved issues in Twine scripting and WordPress CSS with iterative testing.</li>
+    <li><strong>Integrated GitHub version control</strong> – Managed code history and collaborated on projects using Git workflows.</li>
+    <li><strong>Created themed quiz games</strong> – Blended narrative, logic, and visual design for educational interactivity.</li>
+  </ul>
+</section>
+
+
+<section id="Resume" class="tabcontent fade-in">
+  <h2>Resume</h2>
+  <p>You are welcome to download my resume in <a href="resources/resume.pdf" download>PDF format</a>.
+</p>
+  <h3>Callie Bone</h3>
+  <p>Little Rock, AR 72223<br>
+(501) 817-5349 · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bonecallie616@gmail.com" target="_blank">bonecallie616@gmail.com</a></p>
+  <h4>Professional Summary</h4>
+  <p>Customer service professional adept in fostering positive customer experiences and driving sales growth. Known for excellent interpersonal skills and adaptability in dynamic environments. Team-oriented with a strong focus on achieving collective goals and ensuring customer satisfaction.</p>
+  <p>Experienced in enhancing customer interactions to boost loyalty and sales. Utilizes effective communication and problem-solving strategies to address customer needs. Track record of maintaining high levels of customer satisfaction and achieving sales targets consistently.</p>
+  <p>Outside sales specialist with strengths in negotiations, e-commerce, and customer service. Excellent interpersonal and time management skills. Results-oriented sales worker who engages with customers to establish rapport. Proven track record of building customer relationships and successfully closing sales. Committed to delivering exceptional customer service and exceeding sales goals.</p>
+
+  <h4>Professional Skills</h4>
+  <ul class="skills-columns">
+    <li>Communication</li>
+    <li>Time Management</li>
+    <li>Conflict Resolution</li>
+    <li>Collaboration</li>
+    <li>Organization</li>
+    <li>Technological: Microsoft Excel, HTML, CSS, JavaScript, GitHub, WordPress, Wix, Adobe Suite, Google Workspace, Zoom, Google Meet, Microsoft Word, PowerPoint, CodePen, Figma, Twine</li>
+    <li>Cleanliness and Hygiene</li>
+    <li>Product Presentation</li>
+    <li>Maintaining Displays</li>
+    <li>Willingness to Learn</li>
+    <li>Positive Attitude</li>
+    <li>Strong Work Ethic</li>
+    <li>Customer Service</li>
+    <li>Honesty and Integrity</li>
+    <li>Punctuality</li>
+    <li>Safety Procedures Compliance</li>
+    <li>Verbal and Written Communication</li>
+    <li>Safe Food Handling</li>
+    <li>Merchandising Techniques</li>
+    <li>Excellent Customer Service</li>
+    <li>Stock Rotation</li>
+    <li>Active Listening</li>
+    <li>Critical Thinking</li>
+    <li>Customer Relations</li>
+  </ul>
+
+  <h4>Professional Work Experience</h4>
+  <div class="job">
+    <strong>Customer Service Representative</strong><br>
+    Costco Wholesale – Little Rock, AR<br>
+    <em>June 2024 – Present</em><br>
+    <ul>
+      <li>Managed inventory and ensured freshness of produce.</li>
+      <li>Trained new staff on handling and storage procedures.</li>
+      <li>Collaborated with suppliers for timely deliveries.</li>
+      <li>Maintained hygiene standards and display appeal.</li>
+      <li>Assisted customers with product selection and inquiries.</li>
+      <li>Conducted quality checks and enforced safety standards.</li>
+      <li>Developed seasonal promotions to boost engagement.</li>
+      <li>Worked 37 hours weekly.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <strong>Front End Team Lead</strong><br>
+    Target Corporation – Little Rock, AR<br>
+    <em>August 2022 – September 2024</em><br>
+    <ul>
+      <li>Led front-end development team with responsive design standards.</li>
+      <li>Streamlined code review processes.</li>
+      <li>Mentored junior developers and coordinated cross-functional projects.</li>
+      <li>Developed UI components using React and Angular.</li>
+      <li>Collaborated with UX designers to meet accessibility standards.</li>
+      <li>Worked 45 hours weekly.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <strong>FOH Team Member</strong><br>
+    Chick-fil-A – Washington, DC<br>
+    <em>December 2020 – August 2022</em><br>
+    <ul>
+      <li>Coordinated projects and supported strategic initiatives.</li>
+      <li>Educated customers on product features and resolved inquiries.</li>
+      <li>Managed transactions and trained new staff.</li>
+      <li>Implemented customer feedback mechanisms.</li>
+      <li>Built client relationships and boosted sales revenue.</li>
+      <li>Worked 48 hours weekly.</li>
+    </ul>
+  </div>
+
+  <h4>Education</h4>
+  <p><strong>Bachelor of Arts: Web Development</strong><br>
+  University of Arkansas, Little Rock – Expected May 2027<br>
+  Minor: Information Technology<br>
+  GPA: 3.8</p>
+  <ul>
+    <li>Dean's List 2024–2025</li>
+    <li>Chancellor's List 2023–2024</li>
+    <li>Chancellor's Leadership Corps Scholarship</li>
+    <li>Rotary Club of Little Rock – Charles Hathaway Scholarship</li>
+    <li>Schueck, McCarty, Lexicon, Inc. Dean's Endowed Fund</li>
+    <li>Costco Wholesale Scholarship</li>
+    <li>Honor Society Member</li>
+    <li>Service-Learning Project (SLP)</li>
+    <li>Joseph and Mary Kaufman Scholarship</li>
+  </ul>
+
+  <p><strong>High School Diploma</strong><br>
+  Little Rock West High School of Innovation – May 2023<br>
+  GPA: 4.0 | Top 5% of Class</p>
+  <ul>
+    <li>A+ Honor Roll 2019–2023</li>
+    <li>Arkansas Scholar Scholarship</li>
+    <li>Honor Society, DECA, and HOSA Member</li>
+    <li>Vice President of DECA Club</li>
+    <li>Completed AP Biology</li>
+  </ul>
+
+  <h4>Certifications & Achievements</h4>
+  <ul>
+    <li>ServSafe Certified</li>
+  </ul>
+
+  <h4>Volunteer Experience / Community Service</h4>
+  <ul>
+    <li>Coordinated volunteer activities and managed logistics for fundraising events.</li>
+    <li>Implemented feedback systems to improve volunteer satisfaction.</li>
+    <li>Promoted environmental awareness through workshops and hands-on activities.</li>
+    <li>Represented organizations professionally while providing community services.</li>
+    <li>Used Microsoft Sheets and Google Excel to build robotic kits (American Red Cross, 2023).</li>
+  </ul>
+</section>
+
+
+     <section id="CoverLetter" class="tabcontent fade-in">
+  <h2>Letter of Introduction</h2>
+  <p>Dear Hiring Manager,</p>
+
+  <p>
+    I am writing to express my interest in the Web Security Developer position at Any. With five years of experience as an Assistant and a strong foundation in collaboration, critical thinking, and communication, I am excited about the opportunity to contribute to your innovative approach to cybersecurity.
+  </p>
+
+  <p>
+    At my previous role, I developed an organized and systematic working style that allowed me to effectively collaborate with cross-functional teams and ensure seamless communication on complex projects. I understand the importance of integrating security best practices throughout the software development lifecycle and am committed to fostering a culture of security within the teams I work with.
+  </p>
+
+  <p>
+    I have a keen interest in web security, particularly in designing and implementing robust security measures that protect against threats such as data breaches and injections. My proactive approach to identifying vulnerabilities, along with my ability to adapt to the ever-evolving landscape of cybersecurity, aligns with Any's mission to continuously improve and provide innovative solutions.
+  </p>
+
+  <p>
+    I am willing to relocate for the right job, but due to the distance, I would appreciate the opportunity to discuss my qualifications for this position over the phone.
+  </p>
+
+  <p>
+    At your convenience, be sure to get in touch with me at (501) 817-5349, or email me at (501) 817-5349 · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bonecallie616@gmail.com" target="_blank">bonecallie616@gmail.com</a>. It would be an incredible opportunity for me to be considered for this role. Thank you for taking the time to review my application.
+  </p>
+
+  <p>
+    I am enthusiastic about the opportunity to help safeguard digital environments and support your commitment to excellence and customer satisfaction. Thank you for considering my application. I look forward to the possibility of discussing how my skills could contribute to the success of Any.
+  </p>
+
+  <p>
+    Sincerely,<br>
+    Callie Bone<br>
+    Little Rock, AR<br>
+    (501) 817-5349<br>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bonecallie616@gmail.com" target="_blank">bonecallie616@gmail.com</a>
+  </p>
+</section>
+
+
+<section id="Contact" class="tabcontent fade-in">
+  <h2>Contact Me</h2>
+  <div class="contact-card">
+    <div class="contact-item">
+      <span class="icon">📧</span>
+      <strong>Email:</strong>
+      <a href="mailto:bonecallie616@gmail.com">bonecallie616@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <span class="icon">📞</span>
+      <strong>Phone:</strong>
+      <p> (501) 817-5349</p>
+    </div>
+<div class="contact-item location">
+  <span class="icon">📍</span>
+  <strong>Location:</strong>
+  <span class="location-text">Little Rock, AR</span>
+  <span class="hover-note">Willing to Relocate</span>
+</div>
+  </div>
+</section>
+
+
+
+      <section id="Writing" class="tabcontent fade-in">
+        <h2>Writing Examples</h2>
+        <p>Example 1: UX Case Study</p>
+        <p>Example 2: Technical Blog Post</p>
+      </section>
+
+      <section id="WebProject" class="tabcontent fade-in">
+        <h2>Web Projects</h2>
+        <p>Project 1: Budgeting Game</p>
+        <p>Project 2: CSS Playground</p>
+      </section>
+
+      <section id="Database" class="tabcontent fade-in">
+        <h2>Database Projects</h2>
+        <p>Project 1: Inventory Tracker</p>
+        <p>Project 2: Student Portal</p>
+      </section>
+
+      <section id="Programming" class="tabcontent fade-in">
+        <h2>Programming Projects</h2>
+        <p>Project 1: JavaScript Quiz Engine</p>
+        <p>Project 2: PHP Login System</p>
+      </section>
+
+      <section id="SoftSkills" class="tabcontent fade-in">
+        <h2>Soft Skills</h2>
+        <p>Project 1: Team Collaboration Toolkit</p>
+        <p>Project 2: Communication Workshop</p>
+      </section>
+
+      <section id="Capstone" class="tabcontent fade-in">
         <h2>Capstone Project</h2>
-    </div>
-</div>
+        <p>Title: Secure Web Portal for Student Services</p>
+      </section>
+    </main>
+  </div>
 
-<script>
-/* Click the default tab so that the profile is displayed */
-document.getElementById("defaultOpen").click();
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-function openTab(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+  <script src="/script.js"></script>
 </body>
 </html>
