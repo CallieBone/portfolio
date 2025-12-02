@@ -447,3 +447,13 @@ a.button-link:hover {
     box-sizing: border-box;
   }
 }
+
+.project-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(115, 2, 60, 0.721);
+}
+.project-image:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transform: scale(1.03);
+}
